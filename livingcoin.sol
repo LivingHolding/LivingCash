@@ -352,7 +352,7 @@ contract LivingCoin is Context, IBEP20, Ownable {
     _name = "LIVINGCOIN";
     _symbol = "LIVN";
     _decimals = 8;
-    _totalSupply = 2500000000000000000; // 100 thousand
+    _totalSupply = 2500000000000000000; // 25 Billions with 8 decimals 
     _balances[msg.sender] = _totalSupply;
 
     emit Transfer(address(0), msg.sender, _totalSupply);
