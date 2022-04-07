@@ -336,7 +336,7 @@ contract Ownable is Context {
   }
 }
 
-contract LivingCoin is Context, IBEP20, Ownable {
+contract LivingCash is Context, IBEP20, Ownable {
   using SafeMath for uint256;
 
   mapping (address => uint256) private _balances;
@@ -349,10 +349,10 @@ contract LivingCoin is Context, IBEP20, Ownable {
   string private _name;
 
   constructor() public {
-    _name = "LIVINGCOIN";
-    _symbol = "LIVN";
+    _name = "LIVINGCASH";
+    _symbol = "LIVI";
     _decimals = 8;
-    _totalSupply = 2500000000000000000; // 25 Billions with 8 decimals 
+    _totalSupply = 300000000000000000; // 3 Billions with 8 decimals 
     _balances[msg.sender] = _totalSupply;
 
     emit Transfer(address(0), msg.sender, _totalSupply);
